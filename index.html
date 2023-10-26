@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Lista de Tareas</h1>
+
+    <form id="taskForm">
+        <input type="text" id="indicator" placeholder="Indicador de la tarea" required>
+        <input type="text" id="description" placeholder="Descripción de la tarea" required>
+        <select id="state">
+            <option value="no completada">No Completada</option>
+            <option value="completada">Completada</option>
+        </select>
+        <button type="button" onclick="addTask()">Añadir Tarea</button> <!-- Corregido aquí -->
+    </form>
+
+    <ul id="taskList"></ul>
+
+    <script src="appcliente.js"></script> <!-- Asegúrate de incluir este archivo correctamente -->
+</body>
+</html>
